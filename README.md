@@ -34,8 +34,8 @@ This project was created to explore AI integration, modern chat UI development, 
 
 ## Live Demo
 
-[Live Demo Link]
+https://olehwebdevelop.github.io/AI-Psychologist/
 
 ## GitHub
 
-[GitHub Repository Link]
+https://github.com/olehwebdevelop
