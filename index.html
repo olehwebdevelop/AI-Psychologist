@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Psychologist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="nav-bar">
+        <button class="close-sidebar" id="close-sidebar">✕</button>
+        <div class="nav-top">
+            <a class="title" href="">AI Psychologist</a>
+        </div>
+        <div class="chat-history" id="chat-history"></div>
+        <div class="nav-bottom">
+            <button class="new-chat" id="new-chat">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                New Chat
+            </button>
+        </div>
+    </aside>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<main class="main-chat">
+    <div class="chat-screen" id="chat-screen">
+        <div class="messages" id="messages"></div>
+        <div class="chat-input-wrapper">
+            <input
+                class="text-field"
+                id="text-field"
+                type="text"
+                placeholder="Tell us your problem..."
+                autocomplete="off"
+            />
+        </div>
+    </div>
+    <div class="center-container" id="welcome-screen">
+        <h1 class="welcome-title">
+            What's your problem?
+        </h1>
+        <input
+            class="text-field"
+            id="welcome-input"
+            type="text"
+            placeholder="Tell us your problem..."
+            autocomplete="off"
+        />
+    </div>
+    <div class="modal hidden" id="delete-modal">
+    <div class="modal-content">
+        <h3>Delete chat?</h3>
+        <p>This action cannot be undone.</p>
+        <div class="modal-buttons">
+            <button class="cancel-btn" id="cancel-delete">
+                Cancel
+            </button>
+            <button class="delete-btn" id="confirm-delete">
+                Delete
+            </button>
+        </div>
+    </div>
+</div>
+<div class="main-bottom">
+    <p>This chatbot is created for informational purposes only. It does not provide professional psychological or medical advice.</p>
+</div>
+</main>
+<script src="script.js"></script>
+</body> 
+</html>
