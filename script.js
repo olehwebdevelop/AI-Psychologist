@@ -11,7 +11,7 @@ const cancelDeleteBtn=document.getElementById("cancel-delete");
 
 const systemPrompt="You are a professional AI Psychologist. Be empathetic, support the user, listen carefully. Keep responses concise. ALWAYS respond in the exact same language used by the user.";
 
-const GEMINI_API_KEY = "AIzaSyCZsaJgXyUbysJrybJc-7owu0i7nM81NLI"; 
+const GEMINI_API_KEY = "AQ.Ab8RN6KD4-lYLLLxsXMG7rPEMOdZ1oIL57UqeOSGgOthpnHmjg"; 
 
 let chats=JSON.parse(localStorage.getItem("ai_chats"))||[];
 let currentChatId=null;
