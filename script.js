@@ -11,7 +11,7 @@ const cancelDeleteBtn=document.getElementById("cancel-delete");
 
 const systemPrompt="You are a professional AI Psychologist. Be empathetic, support the user, listen carefully. Keep responses concise. ALWAYS respond in the exact same language used by the user.";
 
-const GEMINI_API_KEY = "AQ.Ab8RN6JX5UBPRS0AWZbwaiolW2nAaD-j4y9W7hPH1oNp4nyMLg"; 
+const GEMINI_API_KEY = "AQ.Ab8RN6L7LChOTg-qZmzY7LP_Nw3WH36GLCysJdvSSqmLzvt7cQ"; 
 
 let chats=JSON.parse(localStorage.getItem("ai_chats"))||[];
 let currentChatId=null;
@@ -158,7 +158,7 @@ async function askGeminiAI(chatMessages) {
         parts: [{ text: msg.text }]
     }));
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
     try {
         const response = await fetch(url, {
